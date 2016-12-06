@@ -2,6 +2,7 @@
   <div class="container">
     <div class="columns">
       <div class="column is-half">
+        <base-info />
         <stats-box />
       </div>
     </div>
@@ -9,11 +10,13 @@
 </template>
 
 <script>
+import BaseInfo from './components/BaseInfo';
 import StatsBox from './components/Stats/StatsBox';
 
 export default {
   name: 'app',
   components: {
+    BaseInfo,
     StatsBox,
   },
 };
