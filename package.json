@@ -1,7 +1,7 @@
 {
   "name": "ro-simulator",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "version": "0.0.2",
+  "description": "A simulator of Ragnarok Online builds with vue.js",
   "author": "jigsawye <jigsaw.ye@gmail.com>",
   "private": true,
   "scripts": {

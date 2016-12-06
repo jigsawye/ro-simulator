@@ -1,6 +1,6 @@
 # RO Simulator
 
-![](images/01.png)
+![](images/02.png)
 
 ## Build Setup
 
