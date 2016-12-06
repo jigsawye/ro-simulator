@@ -9,13 +9,38 @@
     </div>
     <div class="column is-half">
       <div class="box">
-        <label class="label">ATK: {{ atk }}</label>
-        <label class="label">MATK: {{ matk }}</label>
-        <label class="label">HIT: {{ hit }}</label>
-        <label class="label">FLEE: {{ flee }} + {{ dodge }}</label>
-        <label class="label">CRI: {{ cri }}</label>
-        <label class="label">DEF: {{ def }}</label>
-        <label class="label">MDEF: {{ mdef }}</label>
+        <nav class="level">
+          <div class="level-item has-text-centered">
+            <p class="heading">ATK</p>
+            <p class="title">{{ atk }} + XXX ± XX</p>
+          </div>
+          <div class="level-item has-text-centered">
+            <p class="heading">MATK</p>
+            <p class="title">{{ matk }} + XXX ± XX</p>
+          </div>
+          <div class="level-item has-text-centered">
+            <p class="heading">CRI</p>
+            <p class="title">{{ cri }}</p>
+          </div>
+        </nav>
+        <nav class="level">
+          <div class="level-item has-text-centered">
+            <p class="heading">DEF</p>
+            <p class="title">XXX + {{ def }}</p>
+          </div>
+          <div class="level-item has-text-centered">
+            <p class="heading">MDEF</p>
+            <p class="title">XXX + {{ mdef }}</p>
+          </div>
+          <div class="level-item has-text-centered">
+            <p class="heading">HIT</p>
+            <p class="title">{{ hit }}</p>
+          </div>
+          <div class="level-item has-text-centered">
+            <p class="heading">FLEE</p>
+            <p class="title">{{ flee }} + {{ dodge }}</p>
+          </div>
+        </nav>
       </div>
     </div>
   </div>
