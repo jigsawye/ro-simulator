@@ -1,6 +1,7 @@
 import range from 'lodash/range';
+import { jobStatBounses } from './constants';
 
-export const statsPointCalculator = level => range(1, +level)
+export const statsPointCaculator = level => range(1, +level)
   .map((lv) => {
     if (lv < 100) {
       return Math.floor((lv / 5) + 3);
@@ -12,8 +13,8 @@ export const statsPointCalculator = level => range(1, +level)
   })
   .reduce((prev, curr) => prev + curr, 100);
 
-export const statsRaiseCalculator = (level, stats) => {
-  const statsPoint = statsPointCalculator(level);
+export const statsRaiseCaculator = (level, stats) => {
+  const statsPoint = statsPointCaculator(level);
   const raise = stats.reduce((p, stat) => (
       p + range(1, stat)
         .map(s => ((s < 100) ?
@@ -24,4 +25,14 @@ export const statsRaiseCalculator = (level, stats) => {
   ), 0);
 
   return statsPoint - raise;
+};
+
+export const statsBounsesCaculator = (job, level) => {
+  const jobBounses = jobStatBounses.filter(j => j.id === job);
+  return jobBounses[0].bounses.filter(r => r[0] <= level)
+    .reduce((prev, next) => {
+      const nextBounses = [...prev];
+      nextBounses[next[1]] += 1;
+      return nextBounses;
+    }, [0, 0, 0, 0, 0, 0]);
 };

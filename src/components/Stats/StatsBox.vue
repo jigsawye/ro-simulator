@@ -1,15 +1,19 @@
 <template>
-  <div class="box">
+  <div>
+    <div class="box">
+      <level />
+    </div>
 
-    <level />
+    <div class="columns">
+      <div class="column is-half">
+        <div class="box">
+          <stats-item v-for="(stat, index) in stats" :id="index">{{ stat }}</stats-item>
+        </div>
 
-    <hr>
+        <stats-point />
+      </div>
+    </div>
 
-    <stats-item v-for="(stat, index) in stats" :id="index">{{ stat }}</stats-item>
-
-    <hr>
-
-    <stats-point />
 
   </div>
 </template>

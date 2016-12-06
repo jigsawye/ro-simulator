@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="columns">
-      <div class="column is-3">
+      <div class="column is-half">
         <stats-box />
       </div>
     </div>
