@@ -3,9 +3,11 @@
     <div class="columns">
       <div class="column is-half">
         <base-info />
-        <stats-box />
       </div>
     </div>
+
+    <stats-box />
+
   </div>
 </template>
 
