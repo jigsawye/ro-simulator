@@ -17,11 +17,11 @@
     <nav class="level">
       <div class="level-item has-text-centered">
         <p class="heading">DEF</p>
-        <p class="title">XXX + {{ def }}</p>
+        <p class="title">{{ def }} + XXX</p>
       </div>
       <div class="level-item has-text-centered">
         <p class="heading">MDEF</p>
-        <p class="title">XXX + {{ mdef }}</p>
+        <p class="title">{{ mdef }} + XXX</p>
       </div>
       <div class="level-item has-text-centered">
         <p class="heading">HIT</p>
