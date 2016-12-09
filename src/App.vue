@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style src="../node_modules/bulma/css/bulma.css"></style>
+<style src="../node_modules/font-awesome/css/font-awesome.css"></style>
 <style>
   body {
     padding-top: 40px;
