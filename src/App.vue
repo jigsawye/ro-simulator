@@ -5,7 +5,7 @@
         <base-info />
       </div>
       <div class="column">
-        <save />
+        <!-- <save /> -->
       </div>
     </div>
 
@@ -16,14 +16,14 @@
 
 <script>
 import BaseInfo from './components/BaseInfo';
-import Save from './components/Save';
+// import Save from './components/Save';
 import StatsBox from './components/Stats/StatsBox';
 
 export default {
   name: 'app',
   components: {
     BaseInfo,
-    Save,
+    // Save,
     StatsBox,
   },
 };
